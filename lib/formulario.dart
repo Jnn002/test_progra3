@@ -87,6 +87,7 @@ class HomeFormulario extends StatelessWidget {
       };
       String jsonData = jsonEncode(body);
       var response = await conexion.post(
+        //URL de la API a la que se enviaran los datos
         Uri.parse(''),
         headers: {
           'Content-Type': 'application/json',
